@@ -40,7 +40,7 @@ Spring has made it super easy to configure and use Apache Kafka. Following is sn
 ```
 
 1. spring-kafka dependency makes it easy to use Kafka in Java application.
-2. lombok dependency is not mandetory. However I am using it to get configuration driven logger.
+2. lombok dependency is not mandatory. However I am using it to get configuration driven logger.
 
 #### Configuration
 Following is the application.yml file. Notice Spring's Kafka support wherein you need to specify producer and consumer properties.
