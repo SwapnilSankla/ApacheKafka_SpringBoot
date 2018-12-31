@@ -1,0 +1,15 @@
+topicName: "MyTopic"
+serializerClass: "org.apache.kafka.common.serialization.StringSerializer"
+deserializerClass: "org.apache.kafka.common.serialization.StringDeserializer"
+spring:
+  kafka:
+    bootstrap-servers: "localhost:9092"
+    producer:
+      key-serializer: ${serializerClass}
+      value-serializer: ${serializerClass}
+    consumer:
+      key-deserializer: ${deserializerClass}
+      value-deserializer: ${deserializerClass}
+      group-id: "MyGroup"
+
+
